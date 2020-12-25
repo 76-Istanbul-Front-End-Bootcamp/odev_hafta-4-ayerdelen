@@ -68,7 +68,7 @@ calculateButton.addEventListener("click", function () {
     currencyHeader.innerHTML =
       translateAmount + " " + fromTarget + " = " + result + " " + toTarget;
 
-    if (isNaN(result)) {
+    if (fromTarget== toTarget) {
       currencyHeader.innerHTML = "Farklı Seçim Yapınız";
     }
     if (isNaN(translateAmount)) {
